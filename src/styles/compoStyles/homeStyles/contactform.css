@@ -49,6 +49,9 @@ textarea{
 }
 
 @media screen and (max-width:576px) {
+    .contactform-div{
+        height: fit-content;
+    }
     .contactform-img{
         display: none;
     }
