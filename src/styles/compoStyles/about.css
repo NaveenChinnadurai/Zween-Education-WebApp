@@ -1,0 +1,58 @@
+.about-div{
+    height: 90vh;
+    width: 100%;
+}
+
+.about-txt{
+    width: 50%;
+    height: 100%;
+    padding: 20px ;
+}
+
+.about-txt>h1{
+    width: 70%;
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.about-txt>p{
+    font-size: 20px;
+}
+
+
+/* style for cards in the about section */
+.aboutCard-div{
+    margin: 40px 0;
+}
+.about-card{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: grey 10px 5px 20px 0px;
+}
+
+.about-card>div>h2{
+    font-weight: 400;
+
+}
+.about-card>p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width:576px) {
+    .about-div{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-txt{
+        width: 100%;
+    }
+    .about-txt>p{
+        text-align: justify;
+    }
+    .about-card{
+        width: 100%;
+    }
+}

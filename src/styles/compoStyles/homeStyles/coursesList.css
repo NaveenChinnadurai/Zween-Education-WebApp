@@ -1,0 +1,35 @@
+.courses-list{
+    padding: 10px;
+    margin: 20px 0;
+    width: fit-content;
+}
+.course-card-list{
+    border-radius: 5px;
+    background-color: rgba(247, 243, 243, 0.655);
+    padding: 10px;
+    margin: 0 10px ;
+    width: 30vw;
+    min-width: 300px
+}
+.course-img-div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course-subdiv{
+    height: 50%;
+    padding: 10px 15px;
+}
+.course-div-1{
+    padding: 10px 5px;
+    justify-content: space-between;
+}
+.course-div-2{
+    padding: 10px 0;
+    justify-content: space-between;
+    border-bottom:black 1px solid;
+}
+
+.course-price{
+    font-size: 25px;
+}
