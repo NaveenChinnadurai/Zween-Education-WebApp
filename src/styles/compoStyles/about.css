@@ -1,11 +1,9 @@
 .about-div{
-    height: 90vh;
-    width: 100%;
+    height:fit-content;
 }
 
 .about-txt{
     width: 50%;
-    height: 100%;
     padding: 20px ;
 }
 
@@ -17,6 +15,7 @@
 
 .about-txt>p{
     font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -34,13 +33,22 @@
 
 .about-card>div>h2{
     font-weight: 400;
-
+    margin: 0 10px;
+    font-family: 'Inter', sans-serif;
+}
+.about-card>div>span{
+    font-size: 35px;
 }
 .about-card>p{
     font-size: 18px;
     margin: 10px 0;
+    font-family: 'Inter', sans-serif;
 }
 
+/* Image style in about section */
+.abt-img-div{
+    width: 50%;
+}
 @media screen and (max-width:576px) {
     .about-div{
         flex-direction: column;
@@ -49,10 +57,21 @@
     .about-txt{
         width: 100%;
     }
+    .about-txt>h1{
+        font-size: 34px;
+        width: 100%;
+    }
     .about-txt>p{
         text-align: justify;
+        font-size: 18px;
     }
     .about-card{
         width: 100%;
+    }
+    .about-card>p{
+        font-size: 18px;
+    }
+    .abt-img-div{
+        display: none;
     }
 }

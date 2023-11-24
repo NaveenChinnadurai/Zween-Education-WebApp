@@ -32,16 +32,16 @@ function CourseCategory() {
         },
     ]
     return(
-        <div className="coursecategory-div">
+        <div className="height-fit coursecategory-div">
             <div className="category-title">
                 <span className="title-span">All courses categories</span>
                 <h1>Courses Categories</h1>
             </div>
-            <div className="row courseCard">
+            <div className="row height-100 courseCard">
                 {
                     courseList.map((e)=>{
                         return(
-                            <div className="course-Card" key={e.id}>
+                            <div className="height-100 border-radius-5 align-centre cur-pointer course-Card" key={e.id}>
                                 <span>{e.icon}</span>
                                 <h1>{e.title}</h1>
                                 <p>{e.para}</p>

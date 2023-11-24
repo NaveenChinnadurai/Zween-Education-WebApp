@@ -1,9 +1,92 @@
 .footer{
-    background-color: rgb(160, 148, 172);
+    background-color: rgb(222, 234, 250);
+    padding: 20px;
+    height: 40vh;
+    justify-content: space-evenly;
 }
-.footer>h1{
-    font-family: 'Poppins', sans-serif;
+.footer-icons{
+    width: 25%;
+    height: 100%;
+}
+.footer-icons>h1{
     font-weight: 400;
-    text-align: center;
+}
+.footer-icons>p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.footer-icon{
+    justify-content: space-evenly;
+}
+.footer-icon>span{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer-pages{
+    height: 100%;
+    width: 30%;
+}
+
+.footer-list-1{
+    margin: 0 5px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer-end-div{
+    width: 20%;
+    height: 100%;
+}
+
+.footer-end-div>input{
     padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: none;
+    border: none;
+}
+
+.footer-end-div>p{
+    background-color: rgb(198, 150, 247);
+    width: fit-content;
+    padding:5px 15px;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+    }
+    .footer-icons{
+        width: 100%;
+    }
+    .footer-pages{
+        width: 100%;
+        padding: 10px 0;
+        justify-content: space-evenly;
+    }
+    .footer-list-1{
+        width: max-content;
+    }
+    .footer-list-1>li{
+        margin: 5px 0;
+    }    
+    .footer-end-div{
+        width: 90%;
+    }
+    .footer-end-div>input{
+        padding: 5px 10px;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .footer-end-div>h2{
+        text-align: center;
+    }
 }

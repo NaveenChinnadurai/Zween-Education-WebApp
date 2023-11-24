@@ -1,0 +1,45 @@
+.contactform-div{
+    height: 90vh;
+}
+.contactform-img{
+    width: 50%;
+}
+
+.contactform{
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+}
+.input-fields{
+    margin: 20px 0;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: space-between;
+    height: 80%;
+    padding: 20px;
+    justify-content: center;
+}
+.name-input{
+    justify-content: space-between;
+}
+input{
+    padding: 10px;
+    margin: 10px 0;
+}
+.input1{
+    width: 48%;
+}
+.input2{
+    width: 100%;
+}
+
+textarea{
+    width:100%;
+    margin: 20px 0;
+}
+
+.contactform-btn{
+    background-color: rgb(0, 191, 255);
+    padding: 10px 25px;
+    border-radius: 10px;
+}

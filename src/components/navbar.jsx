@@ -1,7 +1,9 @@
-/* import { FaSearch as Search} from "react-icons/fa";
- */import '../styles/compoStyles/navbar.css'
+import { FaSearch as Search } from "react-icons/fa";
+import '../styles/compoStyles/navbar.css'
+import { GiHamburgerMenu as BurgerMenu} from "react-icons/gi";
+
 function NavBar() {
-    return(
+    return (
         <div className='row navbar-div'>
             <div className="logo-div">Zween</div>
             <ul className='row'>
@@ -12,7 +14,11 @@ function NavBar() {
                 <li>Categories</li>
                 <li>contact</li>
             </ul>
-            <span className='btn navbar-btn'>GET STARTED</span>
+            <div className="row nav-end">
+                <p className="cur-pointer"><Search /></p>
+                <span className='btn navbar-btn'>GET STARTED</span>
+            </div>
+            <span><BurgerMenu/></span>
         </div>
     )
 }

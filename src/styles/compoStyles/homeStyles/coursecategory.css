@@ -1,7 +1,6 @@
 .coursecategory-div{
-    height: fit-content;
     padding: 50px 0;
-    margin: 20px 0;
+    margin: 100px 0 30px 0;
     background-color: rgb(235, 235, 238);
 }
 .category-title{
@@ -14,7 +13,6 @@
 }
 
 .courseCard{
-    height: 100%;
     padding: 30px 0;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -22,13 +20,9 @@
 .course-Card{
     width: 300px;
     min-width: 100px;
-    height: 100%;
     padding: 20px ;
     margin: 20px 0;
-    cursor: pointer;
     background-color: white;
-    text-align: center;
-    border-radius: 5px;
     box-shadow: rgb(162, 162, 162) 3px 10px 15px 3px;
 }
 .course-Card:hover{
@@ -45,4 +39,10 @@
 
 .course-Card>span{
     font-size: 50px;
+}
+
+@media screen and (max-width:576px) {
+    .coursecategory-div{
+        margin: 10px 0;
+    }
 }

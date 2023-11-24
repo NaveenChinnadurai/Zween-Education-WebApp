@@ -20,16 +20,31 @@
     height: 50%;
     padding: 10px 15px;
 }
+.course-subdiv>h1{
+    font-weight: 300;
+    font-family: 'Inter','san-serif';
+}
 .course-div-1{
     padding: 10px 5px;
     justify-content: space-between;
 }
+.hot-span-course{
+    padding: 3px 12px ;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(71, 83, 114);
+}
 .course-div-2{
-    padding: 10px 0;
+    padding: 20px 0;
     justify-content: space-between;
     border-bottom:black 1px solid;
 }
-
+.course-icon{
+    margin: 0 5px;
+}
 .course-price{
     font-size: 25px;
+    color: rgb(52, 10, 84);
+    font-weight: bold;
 }

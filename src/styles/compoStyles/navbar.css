@@ -1,25 +1,36 @@
 .navbar-div{
     height: 50px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .logo-div{
     width: 100px;
+    font-size: 30px;
 }
 
 .navbar-div>ul{
     width: 40%;
     justify-content: space-between;
 }
-
+.navbar-div>span{
+    font-size: 30px;
+    display: none;
+}
+.nav-end>p{
+    font-size: 25px;
+    margin: 0 20px;
+}
 .navbar-btn{
     background-color: orange;
     font-size: 15px;
 }
 
 @media screen and (max-width:576px) {
-    .navbar-div>ul,.navbar-btn{
+    .navbar-div>ul,.navbar-btn,.nav-end>p{
         display: none;
+    }
+    .navbar-div>span{
+        display: contents;
     }
 }
