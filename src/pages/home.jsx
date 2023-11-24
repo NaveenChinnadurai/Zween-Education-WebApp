@@ -3,10 +3,11 @@ import bannerImg from '../assets/banner-img.png'
 import About from "../components/homePageCompo/about";
 import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseList from "../components/homePageCompo/coursesList";
-/* import ContactForm from '../components/homePageCompo/contactform'*/
+import ContactForm from '../components/homePageCompo/contactform';
 import { FaLocationDot as Location } from "react-icons/fa6";
 import { FaPhone as Phone } from "react-icons/fa";
 import { MdOutlineEmail as Email } from "react-icons/md";
+import LogoDisplay from '../components/homePageCompo/logosList';
 
 function Home() {
 
@@ -45,6 +46,7 @@ function Home() {
                         <img src={bannerImg} alt="Banner Image" />
                     </div>
                 </div>
+                <LogoDisplay/>
                 <About />
             </div>
             <CourseCategory />
@@ -76,7 +78,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {/* <ContactForm/> */}
+            <ContactForm/>
         </div>
     )
 }

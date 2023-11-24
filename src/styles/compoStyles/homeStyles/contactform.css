@@ -1,22 +1,26 @@
 .contactform-div{
     height: 90vh;
+    margin: 30px 0;
 }
 .contactform-img{
     width: 50%;
+    text-align: center;
 }
-
+.contactform>h2{
+    margin: 10px;
+}
 .contactform{
     width: 40%;
     padding: 10px;
-    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: rgb(223, 220, 220) 2px 2px 20px 5px;
 }
 .input-fields{
-    margin: 20px 0;
     flex-wrap: wrap;
     align-content: start;
     justify-content: space-between;
     height: 80%;
-    padding: 20px;
+    padding:10px;
     justify-content: center;
 }
 .name-input{
@@ -24,10 +28,10 @@
 }
 input{
     padding: 10px;
-    margin: 10px 0;
 }
 .input1{
     width: 48%;
+    margin: 10px 0;
 }
 .input2{
     width: 100%;
@@ -35,11 +39,25 @@ input{
 
 textarea{
     width:100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .contactform-btn{
     background-color: rgb(0, 191, 255);
     padding: 10px 25px;
     border-radius: 10px;
+}
+
+@media screen and (max-width:576px) {
+    .contactform-img{
+        display: none;
+    }
+    .contactform{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .contactform-btn{
+        padding: 5px 15px;
+        font-size: 15px;
+    }
 }

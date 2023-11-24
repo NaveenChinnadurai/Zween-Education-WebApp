@@ -1,0 +1,23 @@
+.logo-display{
+    position: absolute;
+    left: 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.logo-div{
+    width:130px;
+    margin: 0 10px;
+}
+.logo-div>img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .logo-display{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .logo-div{
+        width: 100px;
+    }
+}

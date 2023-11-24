@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(222, 234, 250);
+    background-color: rgb(238, 244, 253);
     padding: 20px;
     height: 40vh;
     justify-content: space-evenly;
@@ -50,11 +50,12 @@
 }
 
 .footer-end-div>p{
-    background-color: rgb(198, 150, 247);
+    background-color: rgb(92, 80, 104);
     width: fit-content;
     padding:5px 15px;
     border-radius: 5px;
     margin: 0 auto;
+    color: white;
     cursor: pointer;
 }
 

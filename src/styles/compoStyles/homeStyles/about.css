@@ -1,5 +1,6 @@
 .about-div{
     height:fit-content;
+    margin-top: 100px;
 }
 
 .about-txt{
@@ -53,6 +54,7 @@
     .about-div{
         flex-direction: column;
         height: fit-content;
+        margin-top: 10px;
     }
     .about-txt{
         width: 100%;
