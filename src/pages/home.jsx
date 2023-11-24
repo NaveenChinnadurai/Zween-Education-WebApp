@@ -3,7 +3,7 @@ import bannerImg from '../assets/banner-img.png'
 import About from "../components/homePageCompo/about";
 import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseList from "../components/homePageCompo/coursesList";
-import ContactForm from '../components/homePageCompo/contactform';
+import ContactForm from '../components/homePageCompo/contactForm';
 import { FaLocationDot as Location } from "react-icons/fa6";
 import { FaPhone as Phone } from "react-icons/fa";
 import { MdOutlineEmail as Email } from "react-icons/md";
