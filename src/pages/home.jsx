@@ -1,6 +1,6 @@
 import '../styles/pageStyles/home.css'
 import bannerImg from '../assets/banner-img.png'
-import About from "../components/homePageCompo/about";
+import About from "../components/homePageCompo/aboutCompo";
 import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseList from "../components/homePageCompo/coursesList";
 import ContactForm from '../components/homePageCompo/contactForm';
@@ -10,7 +10,6 @@ import { MdOutlineEmail as Email } from "react-icons/md";
 import LogoDisplay from '../components/homePageCompo/logosList';
 
 function Home() {
-
     const contactList = [
         {
             id: 1,
@@ -38,15 +37,17 @@ function Home() {
         <div>
             <div className="home-banner-div">
                 <div className="row width-100 space-btwn banner-div">
-                    <div className="col height-100 banner-txt">
+                    <div className="col height-100 banner-txt animate__animated animate__fadeInLeft ">
                         <h2>The best online learning platform.</h2>
                         <h1>Raise the Bar on Your e-Learning Experience.</h1>
                     </div>
-                    <div className="row img-div">
+                    <div className="row img-div animate__animated animate__fadeInRight">
                         <img src={bannerImg} alt="Banner Image" />
                     </div>
                 </div>
-                <LogoDisplay/>
+                <div className="home-logo-display">
+                    <LogoDisplay />
+                </div>
                 <About />
             </div>
             <CourseCategory />
@@ -60,7 +61,7 @@ function Home() {
             <div className=" contact-div">
                 <div className="col course-display contact-title-div">
                     <span className="title-span">Contact Us</span>
-                    <h1>Connect with us. We are weating for you message.</h1>
+                    <h1>Connect with us. We are waiting for you message.</h1>
                     <div className="row width-100 contact-details">
                         {
                             contactList.map((e) => {
@@ -78,7 +79,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <ContactForm/>
+            <ContactForm />
         </div>
     )
 }

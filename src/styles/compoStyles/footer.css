@@ -81,6 +81,7 @@
     }    
     .footer-end-div{
         width: 90%;
+        margin: 20px 0;
     }
     .footer-end-div>input{
         padding: 5px 10px;

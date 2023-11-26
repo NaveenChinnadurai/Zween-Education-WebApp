@@ -20,7 +20,10 @@ li{
   list-style: none;
   cursor: pointer;
 }
-
+.link{
+  text-decoration: none;
+  color: black;
+}
 .img-div{
   height: 100%;
   width: 50%;
@@ -32,6 +35,9 @@ li{
 
 .align-centre{
   text-align: center;
+}
+.align-left{
+  text-align: left;
 }
 .title-span{
   background-color: rgb(210, 209, 209);
@@ -67,6 +73,11 @@ input:focus{
 .space-btwn{
   justify-content: space-between;
 }
+
+.pad-20{
+  padding: 20px;
+}
+
 @media screen and (max-width:576px) {
   .img-div{
     margin: 10px  0;
@@ -74,7 +85,7 @@ input:focus{
     width: 100%;
   }
   p{
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 .btn{

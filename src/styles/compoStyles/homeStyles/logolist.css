@@ -11,7 +11,6 @@
 .logo-div>img{
     width: 100%;
 }
-
 @media screen and (max-width:576px) {
     .logo-display{
         flex-wrap: wrap;

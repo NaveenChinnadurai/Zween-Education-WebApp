@@ -16,6 +16,8 @@
 
 .about-txt>p{
     font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
     font-family: 'Inter', sans-serif;
 }
 

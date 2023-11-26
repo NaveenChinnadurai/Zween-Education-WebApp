@@ -5,6 +5,7 @@ import { FaFacebookSquare as FB,
         FaTelegram as TG
 } from "react-icons/fa";
 import { FaXTwitter as Twitter} from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -23,10 +24,9 @@ function Footer() {
             </div>
             <div className="row footer-pages">
                 <ul className="footer-list-1">
-                    <li>Home</li>
-                    <li>Blog</li>
+                    <li><Link to='/' className='link'>Home</Link></li>
                     <li>Courses</li>
-                    <li>About Us</li>
+                    <li><Link to='/about' className='link'>About Us</Link></li>
                     <li>Contact</li>
                 </ul>
                 <ul className="footer-list-1">

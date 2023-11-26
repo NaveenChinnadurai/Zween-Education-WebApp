@@ -7,11 +7,11 @@
     text-align: center;
 }
 .contactform>h2{
-    margin: 10px;
+    margin-top: 20px;
 }
 .contactform{
     width: 40%;
-    padding: 10px;
+    padding: 30px 10px;
     border-radius: 10px;
     box-shadow: rgb(223, 220, 220) 2px 2px 20px 5px;
 }

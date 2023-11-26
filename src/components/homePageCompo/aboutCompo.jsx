@@ -3,7 +3,7 @@ import aboutImg from '../../assets/abt-img.jpg'
 import { FcReadingEbook as Book} from "react-icons/fc";
 import { TbCertificate as Certificate } from "react-icons/tb";
 
-function About() {
+function AboutCompo() {
 
     const aboutCard = [
         {
@@ -20,7 +20,7 @@ function About() {
     ]
     return (
         <div className='row  about-div'>
-            <div className=" about-txt">
+            <div className=" about-txt animate__animated animate__flipInX">
                 <span className='title-span'>About Us</span>
                 <h1>About our next level e-Course.</h1>
                 <p>e-learning allows learners to access course materials and complete assignments at their own pace and on their own schedule. This is particularly beneficial for adult learners.</p>
@@ -40,11 +40,11 @@ function About() {
                     }
                 </div>
             </div>
-            <div className="abt-img-div">
+            <div className="abt-img-div animate__animated animate__flipInY">
                 <img src={aboutImg} alt="About Image" className='width-100'/>
             </div>
         </div>
     )
 }
 
-export default About;
+export default AboutCompo;
