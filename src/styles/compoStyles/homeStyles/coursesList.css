@@ -1,15 +1,10 @@
-.courses-list{
-    padding: 10px;
-    margin: 20px 0;
-    width: fit-content;
-}
 .course-card-list{
     border-radius: 5px;
     background-color: rgba(247, 243, 243, 0.655);
     padding: 10px;
     margin: 0 10px ;
     width: 30vw;
-    min-width: 320px
+    min-width: 320px;
 }
 .course-img-div>img{
     width: 100%;

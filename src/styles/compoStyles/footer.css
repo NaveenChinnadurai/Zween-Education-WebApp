@@ -1,22 +1,26 @@
 .footer{
     background-color: rgb(238, 244, 253);
-    padding: 20px;
-    height: 40vh;
+    height: fit-content;
+    min-width: 250px;
+}
+.footer-subdiv{
     justify-content: space-evenly;
 }
 .footer-icons{
     width: 25%;
-    height: 100%;
 }
 .footer-icons>h1{
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 35px;
 }
 .footer-icons>p{
     margin: 20px 0;
+    font-size: 20px;
     text-align: justify;
 }
 .footer-icon{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding:  0 10px;
 }
 .footer-icon>span{
     font-size: 25px;
@@ -29,22 +33,21 @@
 }
 
 .footer-list-1{
+    gap: 15px 0;
     margin: 0 5px;
-    height: 100%;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+}
+.footer-list-1>li{
+    font-size: 18px;
 }
 .footer-end-div{
     width: 20%;
-    height: 100%;
 }
 
 .footer-end-div>input{
     padding: 10px;
     border-radius: 10px;
-    margin: 10px 0;
+    margin:15px 0;
     box-shadow: none;
     border: none;
 }
@@ -54,19 +57,50 @@
     width: fit-content;
     padding:5px 15px;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 10px 0;
     color: white;
     cursor: pointer;
 }
+.footer-subdiv-2{
+    padding: 10px;
+    width: 97%;
+    margin: 0 auto;
+    border-top: gray solid 1px;
+}
+.footer-subdiv-2>h3{
+    font-weight: 400;
+    left: 0;
+    color: rgb(67, 84, 90);
+}
+
 
 @media screen and (max-width:576px) {
     .footer{
         flex-direction: column;
         height: fit-content;
-        padding: 10px;
+    }
+    .footer-subdiv{
+        padding: 10px 0 0 0;
+    }
+    .footer-subdiv{
+        flex-direction: column;
     }
     .footer-icons{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-icons>p{
+        width: 80%;
+        text-align: center;
+        font-size: 18px !important;
+        letter-spacing: 1.5px;
+    }
+    .footer-icon{
+        width: 70%;
+        min-width: 250px;
+        margin: 0 auto;
     }
     .footer-pages{
         width: 100%;
@@ -78,17 +112,28 @@
     }
     .footer-list-1>li{
         margin: 5px 0;
+        font-size: 16;
     }    
     .footer-end-div{
         width: 90%;
         margin: 20px 0;
     }
     .footer-end-div>input{
-        padding: 5px 10px;
-        width: 80%;
-        margin: 10px auto;
+        padding: 10px 20px;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 16px;
     }
     .footer-end-div>h2{
         text-align: center;
+    }
+    .footer-end-div>p{
+        margin: 0 auto;
+    }
+    .footer-subdiv-2{
+        width: 99%;
+    }
+    .footer-subdiv-2>h3{
+        font-size: 16px;
     }
 }

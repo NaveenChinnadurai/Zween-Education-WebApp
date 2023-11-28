@@ -46,4 +46,24 @@
         top: 15px;
         right: 30px;
     }
+    #mobile-view{
+        display: flex;
+        width: 50vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: fit-content;
+        flex-direction: column;
+        gap: 3px;
+        padding: 35px 0 10px 0;
+        background-color: rebeccapurple;
+    }
+    #mobile-view>li{
+        padding: 5px;
+        width:100%;
+        font-size: 20px;
+    }
+    #mobile-view>li>.link{
+        padding: 0 100%;
+    }
 }

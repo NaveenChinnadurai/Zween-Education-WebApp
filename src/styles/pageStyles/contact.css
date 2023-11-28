@@ -1,0 +1,62 @@
+.contact-page-subdiv{
+    padding: 20px;
+    height: max-content;
+}
+.contact-subdiv-1{
+    gap: 20px;
+    width: 40%;
+    padding: 20px;
+    align-items: center;
+}
+
+#contact-page-card-div{
+    padding: 30px;
+    width: 70%;
+    border: solid 1px gray ;
+}
+
+.contact-subdiv-2{
+    padding: 20px 0;
+    width: 50%;
+    justify-content: center;
+}
+#contact-page-form{
+    width: 100%;
+    padding: 30px 20px;
+}
+#contact-page-form>h2{
+    font-size: 30px;
+}
+#contact-page-form>p{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 01px;
+}
+#contact-page-form>.input-fields>span{
+    padding: 10px 20px ;
+    margin: 20px 0;
+}
+#contact-page-form>.input-fields>.name-input>input,
+#contact-page-form>.input-fields>.input2,
+#contact-page-form>.input-fields>textarea{
+    padding: 15px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:576px){
+    .contact-page-subdiv{
+        flex-direction: column;
+    }
+    .contact-subdiv-1{
+        width: 100%;
+    }
+
+    .contact-subdiv-2{
+        width: 100%;
+        height: fit-content;
+    }
+    .contact-page-form{
+        width: 100vw !important;
+    }
+}

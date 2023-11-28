@@ -59,7 +59,17 @@ const courseList = [
         lesson2: 15,
         ratings: '4.8',
         price: '70.00'
+    },
+    {
+        id: 7,
+        date: 'July 29,2023',
+        category: 'Hot',
+        title: 'Effective Communication in the workspace',
+        lesson1: 11,
+        lesson2: 25,
+        ratings: '4.5',
+        price: '99.00'
     }
-]
+];
 
 export default courseList;

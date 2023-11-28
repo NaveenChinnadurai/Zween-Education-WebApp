@@ -8,6 +8,7 @@ import img3 from '../assets/aboutPage-img/instructorImg/instructor3.jpg'
 import img4 from '../assets/aboutPage-img/instructorImg/instructor4.jpg'
 import scholarImg from '../assets/aboutPage-img/scholarship-img.jpg';
 import { FaRegStar as Star } from "react-icons/fa";
+import PageHeader from '../components/pageHeader';
 
 
 function About() {
@@ -37,9 +38,10 @@ function About() {
             ratings: '4.0'
         }
     ]
+    window.scrollTo(0,0)
     return (
         <div className="abt-page">
-            <h1 className="align-centre pad-20">Home // <span>About</span></h1>
+            <PageHeader page="About"/>
             <div className="pad-20 align-centre page-head">
                 <span className="title-span">Start to Success</span>
                 <h1 className='pad-20'>The Leading Global Marketplace for Learning and Instruction</h1>

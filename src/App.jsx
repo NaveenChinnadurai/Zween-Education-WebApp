@@ -5,6 +5,8 @@ import 'animate.css';
 import Home from './pages/home'
 import About from './pages/about';
 import { Routes,Route } from 'react-router-dom';
+import Courses from './pages/courses';
+import ContactPage from './pages/contact';
 function App() {
   return (
     <div className='app-div'>
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/courses" element={<Courses/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
       </Routes>
       <Footer/>
     </div>

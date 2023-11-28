@@ -1,65 +1,77 @@
-.contactform-div{
-    height: 90vh;
-    margin: 30px 0;
+.contactform {
+    height: fit-content;
 }
-.contactform-img{
-    width: 50%;
-    text-align: center;
-}
-.contactform>h2{
-    margin-top: 20px;
-}
-.contactform{
+.contactform {
     width: 40%;
     padding: 30px 10px;
     border-radius: 10px;
     box-shadow: rgb(223, 220, 220) 2px 2px 20px 5px;
 }
-.input-fields{
+
+.contactform>h2 {
+    margin-top: 20px;
+}
+
+.contactform>p{
+    margin: 10px 0;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+
+.input-fields {
     flex-wrap: wrap;
     align-content: start;
     justify-content: space-between;
     height: 80%;
-    padding:10px;
+    padding: 10px;
     justify-content: center;
 }
-.name-input{
+
+.name-input {
     justify-content: space-between;
 }
-input{
+
+input {
     padding: 10px;
 }
-.input1{
+
+.input1 {
     width: 48%;
     margin: 10px 0;
 }
-.input2{
+
+.input2 {
     width: 100%;
 }
 
-textarea{
-    width:100%;
+textarea {
+    width: 100%;
     margin: 10px 0;
+    padding: 10px;
 }
 
-.contactform-btn{
+.contactform-btn {
     background-color: rgb(0, 191, 255);
     padding: 10px 25px;
     border-radius: 10px;
 }
 
 @media screen and (max-width:576px) {
-    .contactform-div{
+    .contactform-div {
         height: fit-content;
     }
-    .contactform-img{
+
+    .contactform-img {
         display: none;
     }
-    .contactform{
+
+    .contactform {
         width: 95%;
         margin: 0 auto;
     }
-    .contactform-btn{
+
+    .contactform-btn {
         padding: 5px 15px;
         font-size: 15px;
     }

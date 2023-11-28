@@ -1,0 +1,6 @@
+.course-page-list-div{
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+    justify-content: center;
+}

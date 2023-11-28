@@ -1,12 +1,6 @@
 .abt-page{
     padding: 10px;
 }
-.abt-page>h1{
-    margin: 30px 0;
-}
-.abt-page>h1>span{
-    color: rebeccapurple;
-}
 .page-head>h1{
     width: 60%;
     margin: 0 auto;
