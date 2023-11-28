@@ -58,19 +58,15 @@ textarea {
 }
 
 @media screen and (max-width:576px) {
-    .contactform-div {
-        height: fit-content;
+    .contactform{
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
     }
+    .contactform>p{
+        font-size: 18px !important;
 
-    .contactform-img {
-        display: none;
     }
-
-    .contactform {
-        width: 95%;
-        margin: 0 auto;
-    }
-
     .contactform-btn {
         padding: 5px 15px;
         font-size: 15px;

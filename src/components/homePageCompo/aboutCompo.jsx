@@ -20,7 +20,7 @@ function AboutCompo() {
     ]
     return (
         <div className='row  about-div'>
-            <div className=" about-txt animate__animated animate__flipInX">
+            <div className=" about-txt ">
                 <span className='title-span'>About Us</span>
                 <h1>About our next level e-Course.</h1>
                 <p>e-learning allows learners to access course materials and complete assignments at their own pace and on their own schedule. This is particularly beneficial for adult learners.</p>
@@ -40,7 +40,7 @@ function AboutCompo() {
                     }
                 </div>
             </div>
-            <div className="abt-img-div animate__animated animate__flipInY">
+            <div className="abt-img-div ">
                 <img src={aboutImg} alt="About Image" className='width-100'/>
             </div>
         </div>

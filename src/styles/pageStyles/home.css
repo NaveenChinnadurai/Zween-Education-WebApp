@@ -94,5 +94,21 @@
         flex-direction: column;
         padding: 0;
     }
+
+    .contactform-div {
+        padding: 0;
+        margin: 0;
+        min-width: 350px;
+        height: fit-content;
+    }
+
+    .contactform-img {
+        display: none;
+    }
+
+    .contactform {
+        width: 95%;
+        margin: 0 auto;
+    }
  
 }
