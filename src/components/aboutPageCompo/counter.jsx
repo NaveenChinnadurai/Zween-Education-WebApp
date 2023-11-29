@@ -35,7 +35,7 @@ function Counter(props) {
             {
                 counterList.map((e)=>{
                     return(
-                        <div className="pad-20 align-centre counter-card" key={e.id}>
+                        <div className="pad-20 align-centre counter-card" key={e.id} data-aos="zoom-in-right">
                             <img src={e.img} alt="" />
                             <h1>{e.count}</h1>
                             <p>{e.txt}</p>

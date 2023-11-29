@@ -40,14 +40,14 @@ function About() {
     ]
     window.scrollTo(0,0)
     return (
-        <div className="abt-page">
+        <div className="abt-page" data-aos="fade-up">
             <PageHeader page="About"/>
-            <div className="pad-20 align-centre page-head">
+            <div className="pad-20 align-centre page-head" >
                 <span className="title-span">Start to Success</span>
                 <h1 className='pad-20'>The Leading Global Marketplace for Learning and Instruction</h1>
             </div>
             <Counter id='count-div' />
-            <div className="row abt-banner-img">
+            <div className="row abt-banner-img" data-aos="zoom-in-up">
                 <img src={img} alt="Banner-image" />
             </div>
             <AboutCompo />
@@ -58,7 +58,7 @@ function About() {
                     {
                         instructorInfo.map((e) => {
                             return (
-                                <div className="instructor-card" key={e.id}>
+                                <div className="instructor-card" key={e.id}  data-aos="flip-left">
                                     <img src={e.img} alt={e.iname} />
                                     <p className="row align-centre instructor-rate">{e.ratings} <span><Star /></span>(Rating)</p>
                                     <h2>{e.iname}</h2>
@@ -70,10 +70,10 @@ function About() {
                 </div>
             </div>
             <div className="row pad-20 scholarship-div">
-                <div className="row scholarship-img">
+                <div className="row scholarship-img" data-aos="fade-down-right">
                     <img src={scholarImg} alt="Scholarship Image" />
                 </div>
-                <div className="col pad-20 scholar-div-txt">
+                <div className="col pad-20 scholar-div-txt" data-aos="fade-down-left">
                     <span className="title-span">Financial Aid</span>
                     <h1 className='width-100 align-left'>Our Scholarship Programs.</h1>
                     <p className='width-100 align-left'>e-learning allows learners to access course materials and complete assignments at their own pace and on their own schedule. This is particularly beneficial for adult learners.</p>

@@ -2,7 +2,7 @@ import '../../styles/compoStyles/homeStyles/contactform.css'
 
 function ContactForm(props) {
     return (
-        <div className="contactform" id={props.id}>
+        <div className="contactform" id={props.id} data-aos={props.animate}>
             <span className="title-span">Contact Us </span>
             <h2>Feel free to get in touch Contact Me.</h2>
             <p>e-learning allows learners to access course materials and complete assignments at their own pace and on their own schedule.</p>

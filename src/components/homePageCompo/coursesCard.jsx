@@ -6,7 +6,7 @@ import { FaCartShopping as Shop } from "react-icons/fa6";
 
 function CourseCard(props) {
     return (
-        <div className="course-card-list" key={props.id}>
+        <div className="course-card-list" key={props.id} data-aos={props.animation}>
             <div className="row course-img-div">
                 <img src={props.image} alt="Course-Image" />
             </div>

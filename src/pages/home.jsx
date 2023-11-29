@@ -17,11 +17,11 @@ function Home() {
         <div>
             <div className="home-banner-div">
                 <div className="row width-100 space-btwn banner-div">
-                    <div className="col height-100 banner-txt">
+                    <div className="col height-100 banner-txt animate__animated animate__fadeInLeftBig">
                         <h2>The best online learning platform.</h2>
                         <h1>Raise the Bar on Your e-Learning Experience.</h1>
                     </div>
-                    <div className="row img-div ">
+                    <div className="row img-div animate__animated animate__fadeInRightBig">
                         <img src={bannerImg} alt="Banner Image" />
                     </div>
                 </div>
@@ -49,6 +49,7 @@ function Home() {
                                         lecture={e.lesson2}
                                         rate={e.ratings}
                                         price={e.price}
+                                        animation="zoom-in-right"
                                     />
                                 )
                             })
@@ -56,7 +57,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className=" contact-div">
+            <div className=" contact-div" data-aos="fade-up">
                 <div className="col course-display contact-title-div">
                     <span className="title-span">Contact Us</span>
                     <h1>Connect with us. We are waiting for you message.</h1>
@@ -78,10 +79,10 @@ function Home() {
                 </div>
             </div>
             <div className="row width-100 contactform-div">
-                <div className="height-100 contactform-img">
+                <div className="height-100 contactform-img" data-aos="zoom-in-left">
                     <img src={img1} alt="Contact Image " className='height-100' />
                 </div>
-                <ContactForm />
+                <ContactForm animate="zoom-in-right"/>
             </div>
         </div>
     )

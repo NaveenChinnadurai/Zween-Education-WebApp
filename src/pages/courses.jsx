@@ -6,7 +6,7 @@ import img from '../assets/img1.png'
 function Courses() {
     window.scrollTo(0,0)
     return (
-        <div className="courses-div">
+        <div className="courses-div" data-aos="fade-up">
             <PageHeader page="Courses"/>
             <div className="align-centre page-head">
                 <span className="title-span">All Courses</span>
@@ -27,6 +27,7 @@ function Courses() {
                                 lecture={e.lesson2}
                                 rate={e.ratings}
                                 price={e.price}
+                                animation="zoom-out-up"
                             />
                         )
                     })

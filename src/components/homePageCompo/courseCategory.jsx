@@ -41,7 +41,7 @@ function CourseCategory() {
                 {
                     courseList.map((e)=>{
                         return(
-                            <div className="height-100 border-radius-5 align-centre cur-pointer course-Card" key={e.id}>
+                            <div className="height-100 border-radius-5 align-centre cur-pointer course-Card" key={e.id} data-aos="zoom-in-left">
                                 <span>{e.icon}</span>
                                 <h1>{e.title}</h1>
                                 <p>{e.para}</p>
