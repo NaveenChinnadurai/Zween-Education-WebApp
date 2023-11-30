@@ -10,7 +10,9 @@ import List from '../scripts/courseList'
 import img1 from '../assets/contact-img.png'
 import ContactCard from '../components/contactPageCompo/contactCard';
 import contactList from '../scripts/contactList';
-
+import { IoIosArrowBack as LeftArrow,
+         IoIosArrowForward as RightArrow
+        } from "react-icons/io";
 function Home() {
     window.scrollTo(0,0)
     return (
@@ -34,7 +36,8 @@ function Home() {
             <div className="col width-100 course-display">
                 <span className="title-span">Best Courses</span>
                 <h1>Our Courses</h1>
-                <div className="row width-100 courselist-div">
+                <div className="row width-100 courselist-div" id='Courses'>
+                    <LeftArrow className='arrow left-arrow'/>
                     <div className="row course-list">
                         {
                             List.map((e) => {
@@ -55,6 +58,7 @@ function Home() {
                             })
                         }
                     </div>
+                    <RightArrow className='arrow right-arrow'/>
                 </div>
             </div>
             <div className=" contact-div" data-aos="fade-up">
