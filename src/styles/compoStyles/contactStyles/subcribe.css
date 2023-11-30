@@ -1,0 +1,38 @@
+.subcribe-div>input{
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 60%;
+    margin:15px 0;
+    box-shadow: none;
+    border: none;
+}
+
+.subcribe-div>p{
+    background-color: rgb(92, 80, 104);
+    width: fit-content;
+    padding:5px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    .subcribe-div{
+        width: 90%;
+        margin: 20px 0;
+    }
+    .subcribe-div>input{
+        padding: 10px 20px;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+    .subcribe-div>h2{
+        text-align: center;
+    }
+    .subcribe-div>p{
+        margin: 0 auto;
+    }
+}

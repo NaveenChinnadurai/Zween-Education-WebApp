@@ -1,6 +1,5 @@
 .about-div{
     height:fit-content;
-    margin-top: 100px;
 }
 
 .about-txt{
@@ -54,7 +53,7 @@
 }
 @media screen and (max-width:576px) {
     .about-div{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: fit-content;
         margin-top: 10px;
     }
@@ -74,8 +73,10 @@
     }
     .about-card>p{
         font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
     .abt-img-div{
-        display: none;
+        width: 100%;
     }
 }

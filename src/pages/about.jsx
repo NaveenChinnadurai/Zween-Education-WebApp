@@ -1,5 +1,5 @@
 import Counter from '../components/aboutPageCompo/counter';
-import AboutCompo from '../components/homePageCompo/aboutCompo';
+import AboutCompo from '../components/aboutPageCompo/aboutCompo';
 import '../styles/pageStyles/about.css'
 import img from '../assets/aboutPage-img/abt-banner-img.png'
 import img1 from '../assets/aboutPage-img/instructorImg/instructor1.jpg'
@@ -46,10 +46,10 @@ function About() {
                 <span className="title-span">Start to Success</span>
                 <h1 className='pad-20'>The Leading Global Marketplace for Learning and Instruction</h1>
             </div>
-            <Counter id='count-div' />
             <div className="row abt-banner-img" data-aos="zoom-in-up">
                 <img src={img} alt="Banner-image" />
             </div>
+            <Counter id='count-div' />
             <AboutCompo />
             <div className="pad-20 align-centre experts-div">
                 <span className="title-span">Our Instructor</span>

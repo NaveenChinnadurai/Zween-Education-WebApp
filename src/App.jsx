@@ -15,6 +15,7 @@ import Aos from 'aos';
 function App() {
   useEffect(()=>{
     Aos.init()
+    AOS.init()
   },[])
   return (
     <div className='app-div'>

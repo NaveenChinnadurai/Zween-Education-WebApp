@@ -18,14 +18,6 @@
     font-size: 20px;
     text-align: justify;
 }
-.footer-icon{
-    justify-content: space-between;
-    padding:  0 10px;
-}
-.footer-icon>span{
-    font-size: 25px;
-    cursor: pointer;
-}
 
 .footer-pages{
     height: 100%;
@@ -40,26 +32,9 @@
 .footer-list-1>li{
     font-size: 18px;
 }
-.footer-end-div{
+
+#subcribe{
     width: 20%;
-}
-
-.footer-end-div>input{
-    padding: 10px;
-    border-radius: 10px;
-    margin:15px 0;
-    box-shadow: none;
-    border: none;
-}
-
-.footer-end-div>p{
-    background-color: rgb(92, 80, 104);
-    width: fit-content;
-    padding:5px 15px;
-    border-radius: 5px;
-    margin: 10px 0;
-    color: white;
-    cursor: pointer;
 }
 .footer-subdiv-2{
     padding: 10px;
@@ -114,21 +89,9 @@
         margin: 5px 0;
         font-size: 16;
     }    
-    .footer-end-div{
-        width: 90%;
-        margin: 20px 0;
-    }
-    .footer-end-div>input{
-        padding: 10px 20px;
-        width: 90%;
-        margin: 20px auto;
-        font-size: 16px;
-    }
-    .footer-end-div>h2{
+    #subcribe{
+        width: 80%;
         text-align: center;
-    }
-    .footer-end-div>p{
-        margin: 0 auto;
     }
     .footer-subdiv-2{
         width: 99%;

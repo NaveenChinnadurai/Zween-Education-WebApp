@@ -1,12 +1,17 @@
 .counter-div{
     gap:10px;
     justify-content: space-evenly;
+    margin: 20px 0;
 }
 .counter-card{
     width: 20%;
 }
 .counter-card>h1{
     margin: 10px 0;
+    color: rgb(58, 3, 112);
+}
+.counter-card>p{
+    font-size: 17px;
 }
 
 @media screen and (max-width:576px) {

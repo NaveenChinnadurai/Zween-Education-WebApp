@@ -1,14 +1,14 @@
 import '../styles/pageStyles/home.css'
 import bannerImg from '../assets/banner-img.png'
-import About from "../components/homePageCompo/aboutCompo";
+import About from "../components/aboutPageCompo/aboutCompo";
 import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseCard from "../components/homePageCompo/coursesCard";
-import ContactForm from '../components/homePageCompo/contactForm';
+import ContactForm from '../components/contactPageCompo/contactForm';
 import LogoDisplay from '../components/homePageCompo/logosList';
 import img from '../assets/img1.png'
 import List from '../scripts/courseList'
 import img1 from '../assets/contact-img.png'
-import ContactCard from '../components/homePageCompo/contactCard';
+import ContactCard from '../components/contactPageCompo/contactCard';
 import contactList from '../scripts/contactList';
 
 function Home() {

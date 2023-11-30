@@ -1,4 +1,4 @@
-import '../../styles/compoStyles/homeStyles/contactform.css'
+import '../../styles/compoStyles/contactStyles/contactform.css'
 
 function ContactForm(props) {
     return (

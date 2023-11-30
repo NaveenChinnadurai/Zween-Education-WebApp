@@ -1,4 +1,4 @@
-import '../../styles/compoStyles/homeStyles/about.css'
+import '../../styles/compoStyles/aboutStyles/about.css'
 import aboutImg from '../../assets/abt-img.jpg'
 import { FcReadingEbook as Book} from "react-icons/fc";
 import { TbCertificate as Certificate } from "react-icons/tb";

@@ -1,4 +1,4 @@
-import '../../styles/compoStyles/homeStyles/contactCard.css'
+import '../../styles/compoStyles/contactStyles/contactCard.css'
 
 function ContactCard(props) {
     return (

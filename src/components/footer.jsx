@@ -1,14 +1,7 @@
 import '../styles/compoStyles/footer.css';
-import {
-    FaFacebookSquare as FB,
-    FaInstagram as IG,
-    FaWhatsapp as WA,
-    FaTelegram as TG
-} from "react-icons/fa";
-import { FaXTwitter as Twitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-
-
+import Subcribe from './contactPageCompo/subcribe';
+import IconDisplay from './aboutPageCompo/iconDisplay';
 function Footer() {
     return (
         <div className="footer">
@@ -16,13 +9,7 @@ function Footer() {
                 <div className="footer-icons">
                     <h1 className='align-left'>Zween Edu & Co</h1>
                     <p>There are many variations of passag of Lor Ipsum available but the major have suffered alteration</p>
-                    <div className="row footer-icon">
-                        <span><FB /></span>
-                        <span><IG /></span>
-                        <span><Twitter /></span>
-                        <span><WA /></span>
-                        <span><TG /></span>
-                    </div>
+                    <IconDisplay/>
                 </div>
                 <div className="row footer-pages">
                     <ul className="col footer-list-1">
@@ -38,11 +25,7 @@ function Footer() {
                         <li>Branding</li>
                     </ul>
                 </div>
-                <div className="col footer-end-div">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <input type="text" placeholder='Your E-mail Address' />
-                    <p>Subscribe</p>
-                </div>
+                <Subcribe id="subcribe"/>
             </div>
             <div className="row footer-subdiv-2">
                 <h3 className='width-100 align-centre'>All Copyright &copy; reserved for Zween | Nov 2023 </h3>

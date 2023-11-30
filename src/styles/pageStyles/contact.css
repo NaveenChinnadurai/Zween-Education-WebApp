@@ -1,6 +1,7 @@
 .contact-page-subdiv{
     padding: 20px;
-    height: max-content;
+    display: flex;
+    align-items: flex-start;
 }
 .contact-subdiv-1{
     gap: 20px;
@@ -14,16 +15,52 @@
     width: 70%;
     border: solid 1px gray ;
 }
-
+#contact-subcribe{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+#contact-subcribe>h2{
+    font-size: 28px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+#contact-subcribe>input{
+    outline: 1px solid gray;
+    font-size: 16px;
+}
+#contact-subcribe>p{
+    margin: 0 auto;
+    font-size: 20px;
+}
 .contact-subdiv-2{
-    padding: 20px 0;
+    padding: 10px 0;
+    width: 60%;
+}
+.contact-page-txt>h2{
+    margin: 10px 0;
+}
+.contact-page-txt>p{
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+#contact-icon{
     width: 50%;
-    justify-content: center;
+    min-width: 300px;
+    margin: 15px 0;
+}
+#contact-icon>span{
+    font-size: 30px;
 }
 #contact-page-form{
-    width: 100%;
+    min-width: 300px;
+    width: 80%;
     padding: 30px 20px;
     box-sizing: none;
+    margin: 30px auto;
 }
 #contact-page-form>h2{
     font-size: 30px;
@@ -44,7 +81,14 @@
     font-size: 15px;
 }
 
-
+.contact-page-end{
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+}
 @media screen and (max-width:576px){
     .contact-page-subdiv{
         flex-direction: column;
@@ -59,7 +103,18 @@
         padding: 0;
         height: fit-content;
     }
-    .contact-page-form{
-        width: 100vw !important;
+    .contact-text-div{
+        padding: 20px;
+    }
+    #contact-page-form{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .contact-page-end{
+        width: 100%;
+        margin: 0 ;
+        padding: 20px;
+        text-align: justify;
     }
 }
