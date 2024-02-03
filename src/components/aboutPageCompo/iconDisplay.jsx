@@ -1,4 +1,3 @@
-import '../../styles/compoStyles/aboutStyles/iconDisplay.css'
 import {
     FaFacebookSquare as FB,
     FaInstagram as IG,
@@ -8,15 +7,23 @@ import {
 import { FaXTwitter as Twitter } from "react-icons/fa6";
 
 function IconDisplay(props) {
-    return (
-        <div className="row iconDisplay-div" id={props.id}>
-            <span><FB /></span>
-            <span><IG /></span>
-            <span><Twitter /></span>
-            <span><WA /></span>
-            <span><TG /></span>
-        </div>
-    )
+    const containerStyles={
+        justifyContent: "space-between",
+        padding:  "0 10px"
+    }
+    const spanStyle = {
+        fontSize: 25,
+        cursor: "pointer"
+    }
+return (
+    <div className="row iconDisplay-div" id={props.id} style={containerStyles}>
+        <span style={spanStyle}><FB /></span>
+        <span style={spanStyle}><IG /></span>
+        <span style={spanStyle}><Twitter /></span>
+        <span style={spanStyle}><WA /></span>
+        <span style={spanStyle}><TG /></span>
+    </div>
+)
 }
 
 export default IconDisplay

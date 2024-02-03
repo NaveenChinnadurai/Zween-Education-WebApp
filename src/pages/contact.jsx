@@ -46,7 +46,7 @@ function ContactPage() {
                     <ContactForm id='contact-page-form' />
                 </div>
             </div>
-            <div className="contact-page-end">
+            <div className="col contact-page-end about-login-div">
                 <p>Thank you for considering Zween Educations for your learning journey. Our team is here to assist you with any inquiries you may have. Whether you're a prospective student, a current learner, or a potential partner, we value your connection.</p>
                 <p>We look forward to hearing from you and being a part of your educational journey!</p>
             </div>

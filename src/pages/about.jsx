@@ -38,10 +38,9 @@ function About() {
             ratings: '4.0'
         }
     ]
-    window.scrollTo(0,0)
     return (
         <div className="abt-page" data-aos="fade-up">
-            <PageHeader page="About"/>
+            <PageHeader page="About" />
             <div className="pad-20 align-centre page-head" >
                 <span className="title-span">Start to Success</span>
                 <h1 className='pad-20'>The Leading Global Marketplace for Learning and Instruction</h1>
@@ -58,7 +57,7 @@ function About() {
                     {
                         instructorInfo.map((e) => {
                             return (
-                                <div className="instructor-card" key={e.id}  data-aos="flip-left">
+                                <div className="instructor-card" key={e.id} data-aos="flip-left">
                                     <img src={e.img} alt={e.iname} />
                                     <p className="row align-centre instructor-rate">{e.ratings} <span><Star /></span>(Rating)</p>
                                     <h2>{e.iname}</h2>
@@ -68,6 +67,10 @@ function About() {
                         })
                     }
                 </div>
+            </div>
+            <div className="about-quote">
+                <h1>"</h1>
+                <h3>Empower your mind, shop the knowledge! Unleash the potential of learning with our curated collection of wisdom. Transform your curiosity into expertise, one click at a time. Welcome to a smarter way to shop, where education is the ultimate currency!</h3>
             </div>
             <div className="row pad-20 scholarship-div">
                 <div className="row scholarship-img" data-aos="fade-down-right">
@@ -79,6 +82,13 @@ function About() {
                     <p className='width-100 align-left'>e-learning allows learners to access course materials and complete assignments at their own pace and on their own schedule. This is particularly beneficial for adult learners.</p>
                     <span className="width-fit btn scholar-btn">Financial Aid</span>
                 </div>
+            </div>
+            <div className="row about-login-div">
+                <div className='col'>
+                    <h1>Create an account to get started with our platform</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto iste perspiciatis rerum dignissimos animi quibusdam cumque adipisci quas amet voluptate.</p>
+                </div>
+                <span className="btn">Signup Now</span>
             </div>
         </div>
     )

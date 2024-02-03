@@ -1,8 +1,0 @@
-.iconDisplay-div{
-    justify-content: space-between;
-    padding:  0 10px;
-}
-.iconDisplay-div>span{
-    font-size: 25px;
-    cursor: pointer;
-}

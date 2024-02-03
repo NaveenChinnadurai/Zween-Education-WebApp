@@ -29,7 +29,7 @@ li{
 }
 .img-div{
   height: 100%;
-  width: 50%;
+  display: flex;
   justify-content: center;
 }
 .img-div>img{

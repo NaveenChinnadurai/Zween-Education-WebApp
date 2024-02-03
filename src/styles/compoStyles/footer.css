@@ -8,6 +8,8 @@
 }
 .footer-icons{
     width: 25%;
+    align-items: center;
+    min-width: 300px;
 }
 .footer-icons>h1{
     font-weight: 500;
@@ -18,7 +20,10 @@
     font-size: 20px;
     text-align: justify;
 }
-
+#footer-icon{
+    min-width: 250px;
+    max-width: 500px;
+}
 .footer-pages{
     height: 100%;
     width: 30%;

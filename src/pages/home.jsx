@@ -10,11 +10,10 @@ import List from '../scripts/courseList'
 import img1 from '../assets/contact-img.png'
 import ContactCard from '../components/contactPageCompo/contactCard';
 import contactList from '../scripts/contactList';
-import { IoIosArrowBack as LeftArrow,
-         IoIosArrowForward as RightArrow
-        } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight as Arrow} from "react-icons/md";
+import { Link } from 'react-router-dom';
 function Home() {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
     return (
         <div>
             <div className="home-banner-div">
@@ -23,7 +22,7 @@ function Home() {
                         <h2>The best online learning platform.</h2>
                         <h1>Raise the Bar on Your e-Learning Experience.</h1>
                     </div>
-                    <div className="row img-div animate__animated animate__fadeInRightBig">
+                    <div className="img-div animate__animated animate__fadeInRightBig">
                         <img src={bannerImg} alt="Banner Image" />
                     </div>
                 </div>
@@ -37,28 +36,29 @@ function Home() {
                 <span className="title-span">Best Courses</span>
                 <h1>Our Courses</h1>
                 <div className="row width-100 courselist-div" id='Courses'>
-                    <LeftArrow className='arrow left-arrow'/>
                     <div className="row course-list">
                         {
                             List.map((e) => {
-                                return (
-                                    <CourseCard
-                                        id={e.id}
-                                        image={img}
-                                        date={e.date}
-                                        cat={e.category}
-                                        title={e.title}
-                                        lesson={e.lesson1}
-                                        lecture={e.lesson2}
-                                        rate={e.ratings}
-                                        price={e.price}
-                                        animation="zoom-in-right"
-                                    />
-                                )
+                                if (e.id < 4) {
+                                    return (
+                                        <CourseCard
+                                            id={e.id}
+                                            image={img}
+                                            date={e.date}
+                                            cat={e.category}
+                                            title={e.title}
+                                            lesson={e.lesson1}
+                                            lecture={e.lesson2}
+                                            rate={e.ratings}
+                                            price={e.price}
+                                            animation="zoom-in-right"
+                                        />
+                                    )
+                                }
                             })
                         }
                     </div>
-                    <RightArrow className='arrow right-arrow'/>
+                    <Link className='arrow' to="/courses"><Arrow /></Link>
                 </div>
             </div>
             <div className=" contact-div" data-aos="fade-up">
@@ -84,9 +84,9 @@ function Home() {
             </div>
             <div className="row width-100 contactform-div">
                 <div className="height-100 contactform-img" data-aos="zoom-in-left">
-                    <img src={img1} alt="Contact Image " className='height-100' />
+                    <img src={img1} alt="Contact Image " />
                 </div>
-                <ContactForm animate="zoom-in-right"/>
+                <ContactForm animate="zoom-in-right" id='home-contactform' />
             </div>
         </div>
     )

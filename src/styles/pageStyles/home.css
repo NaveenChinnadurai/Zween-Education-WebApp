@@ -1,12 +1,13 @@
 .home-banner-div{
     width: 90vw;
+    padding-top: 20px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
 
 .banner-div{
     height: 90vh;
-    padding: 20px 10px;
+    padding: 20px 50px;
 }
 .banner-txt{
     width: 50%;
@@ -15,14 +16,17 @@
 .banner-txt>h1{
     font-size: 65px;
     font-weight: 400;
+    color: rgb(0, 27, 53);
 }
 .banner-txt>h2{
     font-weight: 300;
+    color: rgb(0, 132, 255);
 }
 /* courses display sections */
 .course-display{
     align-items: center;
     padding: 20px 0;
+    overflow: hidden;
 }
 .course-display>h1{
     margin: 10px 0;
@@ -33,17 +37,11 @@
     height: fit-content;
 }
 .arrow{
-    font-size: 60px;
-    position: absolute;
-    color: black;
+    font-size: 50px;
+    scale: 1.2;
+    color: rgb(0, 49, 141);
     z-index: 1;
     cursor: pointer;
-}
-.left-arrow{
-    left: 0;
-}
-.right-arrow{
-    right: 0;
 }
 .courselist-div::-webkit-scrollbar{
     width: 0px;
@@ -51,7 +49,7 @@
 /* contact card stylings */
 
 .contact-details{
-    padding: 20px;
+    padding: 40px 0;
     justify-content: space-evenly;
 }
 .contact-title-div>h1{
@@ -67,14 +65,23 @@
 
 /* contact form styles */
 .contactform-div{
-    height: 90vh;
+    height: fit-content;
+    justify-content: space-evenly;
     margin: 30px 0;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .contactform-img{
-    width: 50%;
+    width: 40%;
     text-align: center;
+}
+.contactform-img>img{
+    width: 100%;
+    height: 100%;
+}
+#home-contactform{
+    width: 40%;
+    min-width: 450px;
 }
 @media screen and (max-width:576px) {
     .home-banner-div{
@@ -84,6 +91,15 @@
     .banner-div{
         flex-direction: column;
         height: fit-content;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .banner-div>.img-div{
+        height: fit-content;
+    }
+    .banner-div>.img-div>img{
+        width: 80%;
+        height: auto;
     }
     .banner-txt{
         width: 100%;
@@ -109,19 +125,32 @@
     }
 
     .contactform-div {
-        padding: 0;
+        padding: 20px;
         margin: 0;
+        flex-direction: column;
         min-width: 350px;
         height: fit-content;
     }
 
     .contactform-img {
-        display: none;
+        position: absolute;
+        width: 80%;
+        height:80%;
+        z-index: 1;
     }
-
+    .contactform-img>img{
+        opacity: 0.5;
+    }
     .contactform {
         width: 95%;
         margin: 0 auto;
     }
- 
+    #home-contactform{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1000px) {
+    #home-contactform{
+        min-width: 350px;
+    }
 }

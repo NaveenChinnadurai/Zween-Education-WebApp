@@ -6,10 +6,10 @@ function Footer() {
     return (
         <div className="footer">
             <div className="row pad-20 footer-subdiv">
-                <div className="footer-icons">
+                <div className="col footer-icons">
                     <h1 className='align-left'>Zween Edu & Co</h1>
                     <p>There are many variations of passag of Lor Ipsum available but the major have suffered alteration</p>
-                    <IconDisplay/>
+                    <IconDisplay id="footer-icon"/>
                 </div>
                 <div className="row footer-pages">
                     <ul className="col footer-list-1">

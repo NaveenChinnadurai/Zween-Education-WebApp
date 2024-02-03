@@ -1,10 +1,11 @@
-import '../styles/compoStyles/pageHeader.css'
 
 function PageHeader(props) {
     return (
-        <div className="page-header">
-            <h1 className="align-centre pad-20">Home // <span>{props.page}</span></h1>
-        </div>
+        <h1 className="align-centre pad-20" style={{ margin: "30px 0" }}>
+            Home //
+            <span style={{ color: "#663399" }}> {props.page}
+            </span >
+        </h1 >
     )
 }
 

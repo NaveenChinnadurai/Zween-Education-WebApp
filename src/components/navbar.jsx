@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import { IoMdClose as Cross } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-
 function NavBar() {
     const[open,setOpen]=useState(false)
     const[classname,setClassname]=useState("")
@@ -27,8 +26,8 @@ function NavBar() {
             <ul className='row nav-list' id={classname}>
                 <span className="navbar-cross"  onClick={clickBurger}><Cross/></span>
                 <li  onClick={clickBurger}><Link to="/" className="link">Home</Link></li>
-                <li  onClick={clickBurger}><Link to="/about" className="link">About</Link></li>
                 <li  onClick={clickBurger}><Link to="/courses" className="link">Courses</Link></li>
+                <li  onClick={clickBurger}><Link to="/about" className="link">About</Link></li>
                 <li  onClick={clickBurger}>Categories</li>
                 <li  onClick={clickBurger}><Link to='/contact' className="link">contact</Link></li>
             </ul>
