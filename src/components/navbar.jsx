@@ -33,7 +33,7 @@ function NavBar() {
             </ul>
             <div className="row nav-end">
                 <p className="cur-pointer"><Search /></p>
-                <span className='btn navbar-btn'>GET STARTED</span>
+                <Link to="register" className='btn navbar-btn'>GET STARTED</Link>
             </div>
             <span onClick={clickBurger}><BurgerMenu/></span>
         </div>

@@ -9,6 +9,7 @@ import img4 from '../assets/aboutPage-img/instructorImg/instructor4.jpg'
 import scholarImg from '../assets/aboutPage-img/scholarship-img.jpg';
 import { FaRegStar as Star } from "react-icons/fa";
 import PageHeader from '../components/pageHeader';
+import { Link } from 'react-router-dom';
 
 
 function About() {
@@ -70,7 +71,7 @@ function About() {
             </div>
             <div className="about-quote">
                 <h1>"</h1>
-                <h3>Empower your mind, shop the knowledge! Unleash the potential of learning with our curated collection of wisdom. Transform your curiosity into expertise, one click at a time. Welcome to a smarter way to shop, where education is the ultimate currency!</h3>
+                <h2>Empower your mind, shop the knowledge! Unleash the potential of learning with our curated collection of wisdom. Transform your curiosity into expertise, one click at a time. Welcome to a smarter way to shop, where education is the ultimate currency!</h2>
             </div>
             <div className="row pad-20 scholarship-div">
                 <div className="row scholarship-img" data-aos="fade-down-right">
@@ -88,7 +89,7 @@ function About() {
                     <h1>Create an account to get started with our platform</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto iste perspiciatis rerum dignissimos animi quibusdam cumque adipisci quas amet voluptate.</p>
                 </div>
-                <span className="btn">Signup Now</span>
+                <Link to="/register" className="btn">Signup Now</Link>
             </div>
         </div>
     )

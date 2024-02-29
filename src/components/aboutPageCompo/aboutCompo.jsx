@@ -19,7 +19,7 @@ function AboutCompo() {
         }
     ]
     return (
-        <div className='row  about-div'>
+        <div className='row about-div'>
             <div className=" about-txt " data-aos="zoom-out-left">
                 <span className='title-span'>About Us</span>
                 <h1>About our next level e-Course.</h1>

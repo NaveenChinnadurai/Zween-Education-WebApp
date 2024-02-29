@@ -2,7 +2,6 @@ import CourseCard from '../components/homePageCompo/coursesCard';
 import PageHeader from '../components/pageHeader';
 import '../styles/pageStyles/courses.css'
 import List from '../scripts/courseList'
-import img from '../assets/img1.png'
 function Courses() {
     window.scrollTo(0,0)
     return (
@@ -19,7 +18,7 @@ function Courses() {
                             <CourseCard
                                 className='course-page-card'
                                 id={e.id}
-                                image={img}
+                                image={e.img}
                                 date={e.date}
                                 cat={e.category}
                                 title={e.title}

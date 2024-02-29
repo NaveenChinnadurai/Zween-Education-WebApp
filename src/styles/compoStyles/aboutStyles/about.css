@@ -1,5 +1,7 @@
 .about-div{
     height:fit-content;
+    width: 90%;
+    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -17,7 +19,7 @@
 .about-txt>p{
     font-size: 20px;
     letter-spacing: 0.5px;
-    line-height: 30px;
+    line-height: 35px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -45,6 +47,7 @@
 .about-card>p{
     font-size: 18px;
     margin: 10px 0;
+    line-height: 30px;
     font-weight: 200;
     font-family: 'Inter', sans-serif;
 }

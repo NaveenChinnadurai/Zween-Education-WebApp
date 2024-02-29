@@ -1,10 +1,11 @@
 .logo-display{
-    justify-content: space-evenly;
+    display: flex !important;
     width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .logo-div{
-    width:130px;
-    margin: 0 10px;
+    width:150px;
 }
 .logo-div>img{
     width: 100%;

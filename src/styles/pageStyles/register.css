@@ -1,0 +1,52 @@
+.registerPage {
+  background: url('../../assets/registerImg.jpg') center no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container {
+  width: 30%;
+  min-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(0, 140, 255, 0.096);
+}
+
+.register-container>h2 {
+  margin: 20px 0;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+.register-form>button{
+  margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(144, 205, 255);
+}

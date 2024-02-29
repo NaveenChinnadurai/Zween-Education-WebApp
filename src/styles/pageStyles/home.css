@@ -16,11 +16,29 @@
 .banner-txt>h1{
     font-size: 65px;
     font-weight: 400;
-    color: rgb(0, 27, 53);
+}
+.banner-txt>h1{
+    color: #222F5D;
+    font-weight: bold;
 }
 .banner-txt>h2{
     font-weight: 300;
-    color: rgb(0, 132, 255);
+    color: #444F76;
+    font-weight: bold;
+}
+.banner-txt>div{
+    gap:30px;
+    margin-top: 20px;
+}
+.home-btn{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 20px !important ;
+    cursor: pointer;
+}
+.home-btn-2{
+    background-color: transparent;
+    border: 2px solid orange;
 }
 /* courses display sections */
 .course-display{

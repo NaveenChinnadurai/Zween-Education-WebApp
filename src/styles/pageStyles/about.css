@@ -40,12 +40,19 @@
 /*Quote section*/
 .about-quote{
     width: 100%;
-    padding: 25px 20%;
+    padding: 10px 20%;
+    padding-bottom: 50px;
     text-align: center;
     margin: 20px auto;
     background-color: rgb(213, 231, 255);
 }
-.about-quote>h3{
+.about-quote>h1{
+    font-size: 100px;
+    line-height: 100px;
+    padding: 0 !important;
+    transform: rotate(180deg);
+}
+.about-quote>h2{
     text-align: center;
     line-height: 2;
 }
@@ -83,13 +90,13 @@
 
 .about-login-div{
     width: 80%;
-    margin:0 auto;
+    margin:20px auto;
     margin-bottom: 20px;
     padding: 30px;
     border-radius: 10px;
     height: 300px;
     justify-content: space-evenly;
-    background: linear-gradient(140deg,rgb(31, 152, 233),rgb(172, 130, 213),rgb(66, 166, 248));
+    background: linear-gradient(140deg,rgb(218, 240, 255),rgb(228, 200, 255),rgb(191, 176, 255));
 }
 .about-login-div>div{
     gap: 20px;
@@ -103,8 +110,10 @@
     width: 80%;
     font-size: 20px;
 }
-.about-login-div>span{
+.about-login-div>.btn{
     background-color: rgb(167, 215, 255);
+    text-decoration: none;
+    color: black;
 }
 @media screen and (max-width:576px) {
     .page-head>h1{

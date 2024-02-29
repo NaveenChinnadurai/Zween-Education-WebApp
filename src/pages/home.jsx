@@ -5,33 +5,34 @@ import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseCard from "../components/homePageCompo/coursesCard";
 import ContactForm from '../components/contactPageCompo/contactForm';
 import LogoDisplay from '../components/homePageCompo/logosList';
-import img from '../assets/img1.png'
 import List from '../scripts/courseList'
 import img1 from '../assets/contact-img.png'
 import ContactCard from '../components/contactPageCompo/contactCard';
-import contactList from '../scripts/contactList';
-import { MdKeyboardDoubleArrowRight as Arrow} from "react-icons/md";
+import contactList from '../scripts/contactList.jsx';
+import { MdKeyboardDoubleArrowRight as Arrow } from "react-icons/md";
 import { Link } from 'react-router-dom';
 function Home() {
     window.scrollTo(0, 0)
     return (
         <div>
-            <div className="home-banner-div">
-                <div className="row width-100 space-btwn banner-div">
-                    <div className="col height-100 banner-txt animate__animated animate__fadeInLeftBig">
-                        <h2>The best online learning platform.</h2>
-                        <h1>Raise the Bar on Your e-Learning Experience.</h1>
-                    </div>
-                    <div className="img-div animate__animated animate__fadeInRightBig">
-                        <img src={bannerImg} alt="Banner Image" />
+            <div className="row width-100 space-btwn banner-div">
+                <div className="col height-100 banner-txt animate__animated animate__fadeInLeftBig">
+                    <h2>The best online learning platform.</h2>
+                    <h1>Raise the Bar on Your <span style={{ color: '#00C5E7' }}>e-Learning </span> Experience.</h1>
+                    <div className="row">
+                        <Link to="/register" className=" btn home-btn home-btn-1">Join Now</Link>
+                        <Link to="/about" className=" btn home-btn home-btn-2">Know More</Link>
                     </div>
                 </div>
-                <div className="home-logo-display">
-                    <LogoDisplay />
+                <div className="img-div animate__animated animate__fadeInRightBig">
+                    <img src={bannerImg} alt="Banner Image" />
                 </div>
-                <About />
             </div>
-            <CourseCategory />
+            <div className="home-logo-display">
+                <LogoDisplay />
+            </div>
+            <About />
+            <CourseCategory />ackgro
             <div className="col width-100 course-display">
                 <span className="title-span">Best Courses</span>
                 <h1>Our Courses</h1>
@@ -43,7 +44,7 @@ function Home() {
                                     return (
                                         <CourseCard
                                             id={e.id}
-                                            image={img}
+                                            image={e.img}
                                             date={e.date}
                                             cat={e.category}
                                             title={e.title}

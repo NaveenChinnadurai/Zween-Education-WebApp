@@ -8,44 +8,14 @@ import img6 from '../../assets/Icons/Sony.png'
 import img7 from '../../assets/Icons/meta.png'
 
 function LogoDisplay() {
-    const LogoList=[
-        {
-            id:1,
-            img:img1
-        },
-        {
-            id:2,
-            img:img2
-        },
-        {
-            id:3,
-            img:img3
-        },
-        {
-            id:4,
-            img:img4
-        },
-        {
-            id:5,
-            img:img5
-        },
-        {
-            id:6,
-            img:img6
-        },
-        {
-            id:7,
-            img:img7
-        }
-
-    ]
-    return(
-        <div className="row  logo-display">
+    const LogoList = [img1, img2, img3, img4, img5, img6, img7]
+    return (
+        <div className="logo-display">
             {
-                LogoList.map((e)=>{
-                    return(
-                        <div className="logo-div" key={e.id}>
-                            <img src={e.img} alt="" />
+                LogoList.map((e, i) => {
+                    return (
+                        <div className="logo-div" key={i}>
+                            <img src={e} alt="logo-img" />
                         </div>
                     )
                 })
