@@ -7,11 +7,13 @@
 
 .banner-div{
     height: 90vh;
+    width: 90%;
+    margin: 0 auto;
     padding: 20px 50px;
 }
 .banner-txt{
     width: 50%;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 .banner-txt>h1{
     font-size: 65px;
@@ -39,6 +41,30 @@
 .home-btn-2{
     background-color: transparent;
     border: 2px solid orange;
+}
+.banner-img-div{
+    height: 100%;
+}
+.banner-img-div>.main-img{
+    height: 100%;
+}
+.banner-rel{
+    position: absolute;
+    cursor: pointer;
+    transition-duration: 2s;
+}
+.banner-rel:hover{
+    box-shadow: grey 0 0 20px 0px;
+    transform: translateX(-10px);
+}
+.catlog{
+    bottom: 0px;
+    left: 0px;
+    height: 200px;
+}
+.chat{
+    width: 300px;
+    right: -100px;
 }
 /* courses display sections */
 .course-display{
@@ -101,7 +127,7 @@
     width: 40%;
     min-width: 450px;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:800px) {
     .home-banner-div{
         width: 100vw;
         margin: auto;
@@ -112,12 +138,15 @@
         padding: 0;
         padding-top: 20px;
     }
-    .banner-div>.img-div{
+    .banner-div>.banner-img-div{
         height: fit-content;
     }
-    .banner-div>.img-div>img{
-        width: 80%;
+    .banner-div>.banner-img-div>img{
+        width: 100%;
         height: auto;
+    }
+    .banner-rel{
+        display: none;
     }
     .banner-txt{
         width: 100%;

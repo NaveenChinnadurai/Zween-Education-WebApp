@@ -1,5 +1,7 @@
 import '../styles/pageStyles/home.css'
 import bannerImg from '../assets/banner-img.png'
+import catlog from '../assets/banner.png'
+import chat from '../assets/chat.png'
 import About from "../components/aboutPageCompo/aboutCompo";
 import CourseCategory from "../components/homePageCompo/courseCategory";
 import CourseCard from "../components/homePageCompo/coursesCard";
@@ -15,7 +17,7 @@ function Home() {
     window.scrollTo(0, 0)
     return (
         <div>
-            <div className="row width-100 space-btwn banner-div">
+            <div className="row space-btwn banner-div">
                 <div className="col height-100 banner-txt animate__animated animate__fadeInLeftBig">
                     <h2>The best online learning platform.</h2>
                     <h1>Raise the Bar on Your <span style={{ color: '#00C5E7' }}>e-Learning </span> Experience.</h1>
@@ -24,15 +26,17 @@ function Home() {
                         <Link to="/about" className=" btn home-btn home-btn-2">Know More</Link>
                     </div>
                 </div>
-                <div className="img-div animate__animated animate__fadeInRightBig">
-                    <img src={bannerImg} alt="Banner Image" />
+                <div className="banner-img-div animate__animated animate__fadeInRightBig">
+                    <img src={catlog} alt="Banner Image" className='banner-rel catlog'/>
+                    <img src={chat} alt="Banner Image" className='banner-rel chat'/>
+                    <img src={bannerImg} alt="Banner Image" className='main-img'/>
                 </div>
             </div>
             <div className="home-logo-display">
                 <LogoDisplay />
             </div>
             <About />
-            <CourseCategory />ackgro
+            <CourseCategory />
             <div className="col width-100 course-display">
                 <span className="title-span">Best Courses</span>
                 <h1>Our Courses</h1>

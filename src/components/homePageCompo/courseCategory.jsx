@@ -28,7 +28,7 @@ function CourseCategory() {
             id:4,
             icon:<Brand/>,
             title:'Branding',
-            para:'Branding refers to the process of creating a unique name, design, symbol.'
+            para:'Branding refers to the process of creating a unique name.'
         },
     ]
     return(
