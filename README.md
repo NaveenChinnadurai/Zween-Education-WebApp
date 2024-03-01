@@ -7,6 +7,6 @@
 - Javascript
 - CSS
 
-Also, I deployed my work through Vercel on site => https://zween-education-web-app.vercel.app/
+Also, I deployed my work through Vercel on site => https://zween-education-web.vercel.app/ 
 
 
